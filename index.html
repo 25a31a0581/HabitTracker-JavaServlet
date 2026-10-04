@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Habit Tracker</h1>
+
+        <!-- Add Habit Form -->
+        <div class="card">
+            <h3>Add New Habit:</h3>
+            <form action="habit" method="POST">
+                <input type="text" name="habitName" placeholder="e.g. Study Java" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <!-- Static Preview of My Habits (Will be dynamic later) -->
+        <div class="card">
+            <h3>My Habits:</h3>
+            <ul class="habit-list">
+                <li class="completed">
+                    <span>☑ Study Java</span>
+                    <button class="btn-delete">Delete</button>
+                </li>
+                <li>
+                    <span>☐ Exercise</span>
+                    <button class="btn-delete">Delete</button>
+                </li>
+                <li class="completed">
+                    <span>☑ Read Book</span>
+                    <button class="btn-delete">Delete</button>
+                </li>
+            </ul>
+
+            <div class="progress">
+                <strong>Progress:</strong> 2 / 3 completed
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
